@@ -1,8 +1,11 @@
 # docker-twmap-cli
 create map locally
 
+```
+curl -O https://raw.githubusercontent.com/happyman/docker-twmap-cli/main/twmap.sh
+chmod 755 ./twmap.sh
 
-docker pull happyman/docker-twmap-cli
+
 ./twmap.sh
 Usage: /twmap/twmap_gen/cmd_make2.php -r 236:2514:6:4:TWD67 [-g gpx:0:0] [-c] [-G] -O dir [-e] -v 1|3|2016 -t title [-i localhost]
        -r params: startx:starty:shiftx:shifty:datum  datum:TWD67 or TWD97
@@ -21,3 +24,4 @@ Usage: /twmap/twmap_gen/cmd_make2.php -r 236:2514:6:4:TWD67 [-g gpx:0:0] [-c] [-
        -G merge user track_logs
        -3 for A3 output
        -l channel:uniqid to notify web, email from web interface
+```
