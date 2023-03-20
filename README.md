@@ -1,8 +1,11 @@
 # docker-twmap-cli
 create map locally
-
 ```
-curl -O https://raw.githubusercontent.com/happyman/docker-twmap-cli/main/twmap.sh
+git clone https://github.com/happyman/docker-twmap-cli.git
+cd docker-twmap-cli
+
+./build.sh
+
 chmod 755 ./twmap.sh
 
 ./twmap.sh
