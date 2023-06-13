@@ -7,7 +7,7 @@ RUN wget --tries=0 --timeout=2 -O - https://getcomposer.org/installer | php -- -
 ## 04c7861 with agent option
 ## 14db2ef remove 經建一版
 ## v3.03_v4.34 use beanstalkd
-    git clone https://github.com/happyman/twmap && cd twmap && git checkout v3.03_v4.34 && \
+git clone https://github.com/happyman/twmap && cd twmap && git checkout v3.03_v4.35  && \
     cd twmap_gen && composer install && cp config.inc.php.sample config.inc.php && \
     mkdir -p /workdir && chmod -R a+rwX /workdir 
     		
