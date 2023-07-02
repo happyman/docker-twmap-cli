@@ -1,4 +1,4 @@
-FROM happyman/docker-twmap-base:v2.2
+FROM happyman/docker-twmap-base:v2.3
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN wget --tries=0 --timeout=2 -O - https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
 ## websocat multi-arch with arch
