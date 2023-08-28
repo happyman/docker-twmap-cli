@@ -1,4 +1,4 @@
-FROM happyman/docker-twmap-base:v2.3
+FROM happyman/docker-twmap-base:v2.4
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN wget --tries=0 --timeout=2 -O - https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
 ## websocat multi-arch with arch
@@ -7,8 +7,9 @@ RUN wget --tries=0 --timeout=2 -O - https://getcomposer.org/installer | php -- -
 ## 04c7861 with agent option
 ## 14db2ef remove 經建一版
 ## v3.03_v4.34 use beanstalkd
+## svg parse error 27a39a9 e17c92b
 git clone --progress https://github.com/happyman/twmap && \
-    cd twmap/twmap_gen && composer install && cp config.inc.php.sample config.inc.php && \
+    cd twmap/twmap_gen && git checkout e17c92b && composer install && cp config.inc.php.sample config.inc.php && \
     mkdir -p /workdir && chmod -R a+rwX /workdir 
     		
 USER ${USERNAME}
