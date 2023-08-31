@@ -9,4 +9,9 @@ echo "test rudymap..."
 ./twmap.sh $debug -r $range -D 3x4 -G -v 2016 $debug $log $dns
 echo "test twmap..."
 ./twmap.sh $debug -r $range -c -G -D 2x3 -v 3 $debug $log $dns
-
+echo "test historical map..."
+./twmap.sh $debug -r $range -G -D 2x3 -v 1904 $debug $log $dns
+./twmap.sh $debug -r $range -G -D 4x6 -D 2x3 -v 1916 $debug $log $dns
+./twmap.sh $debug -r $range -G -D 5x7 -D 2x3 -v 1921 $debug $log $dns
+./twmap.sh $debug -r $range -G -D 1x2 -D 2x3 -v 1924 $debug $log $dns
+echo done

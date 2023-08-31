@@ -8,8 +8,9 @@ RUN wget --tries=0 --timeout=2 -O - https://getcomposer.org/installer | php -- -
 ## 14db2ef remove 經建一版
 ## v3.03_v4.34 use beanstalkd
 ## svg parse error 27a39a9 e17c92b
+## v3.20_v4.36 可出歷史圖層
 git clone --progress https://github.com/happyman/twmap && \
-    cd twmap/twmap_gen && git checkout e17c92b && composer install && cp config.inc.php.sample config.inc.php && \
+    cd twmap/twmap_gen && git checkout v3.20_v4.36 && composer install && cp config.inc.php.sample config.inc.php && \
     mkdir -p /workdir && chmod -R a+rwX /workdir 
     		
 USER ${USERNAME}
